@@ -204,7 +204,7 @@ function updatevoronoimap(jaar){
                       let coloursector = property;
                       let newArray = objectToArray(indexedData[jouwJaarVariabel][property]);
                       totaalpercentage = d3.sum(newArray.map(function(d){
-                          return (d3.format(".1s")(d.procentperjaar))
+                          return (d.procentperjaar)
                       }))
                       size = d3.sum(newArray.map(function(d){
                           return d.size
