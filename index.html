@@ -448,7 +448,7 @@ function updatevoronoimap(jaar){
               .append("text")
               .attr("class", "percentagelabel")
               .text(function(d, i) 
-              {return percentages = d.site.originalObject.data.originalData.size + "%";
+              {return percentages = d.site.originalObject.data.originalData.procentperjaar + "%";
               })
               .attr("x", function(d) {
                   percentages.toString()
